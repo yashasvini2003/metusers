@@ -11,7 +11,7 @@ const userService = require("./user-service.js");
 const HTTP_PORT = process.env.PORT || 8080;
 // Add this CORS configuration before your routes to apply it globally
 app.use(cors({
-  origin: 'https://metmuseum-enrvmabo4-yashasvinis-projects.vercel.app',  // Specify your frontend URL here
+  origin: 'https://metmuseum-theta.vercel.app',  // Specify your frontend URL here
   methods: ['GET', 'POST', 'PUT', 'DELETE'],  // You can specify which methods are allowed
   allowedHeaders: ['Content-Type', 'Authorization'],  // Specify allowed headers if needed
 }));
