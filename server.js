@@ -9,12 +9,6 @@ dotenv.config();
 const userService = require("./user-service.js");
 
 const HTTP_PORT = process.env.PORT || 8080;
-// Add this CORS configuration before your routes to apply it globally
-app.use(cors({
-  origin: 'https://metmuseum-theta.vercel.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],  // You can specify which methods are allowed
-  allowedHeaders: ['Content-Type', 'Authorization'],  // Specify allowed headers if needed
-}));
 
 // JSON Web Token Setup
 var ExtractJwt = passportJWT.ExtractJwt;
